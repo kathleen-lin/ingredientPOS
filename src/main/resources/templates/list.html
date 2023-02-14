@@ -17,6 +17,12 @@
             <div class="col" data-th-each="ingredient: ${all}">
               <div class="card">
                 <span data-th-text="${ingredient.name}" ></span>
+
+                <!--
+                    ingredient url = ./ingredient/ingredientname
+                -->
+                <a data-th-href="@{./ingredient/{ingredient}(ingredient=${ingredient.name})}"> test</a>
+
               </div>
             </div>
             

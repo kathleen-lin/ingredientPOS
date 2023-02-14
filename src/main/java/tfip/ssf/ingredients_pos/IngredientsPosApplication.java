@@ -8,6 +8,8 @@ public class IngredientsPosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IngredientsPosApplication.class, args);
+
+	
 	}
 
 }

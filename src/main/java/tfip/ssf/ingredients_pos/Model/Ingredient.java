@@ -1,5 +1,7 @@
 package tfip.ssf.ingredients_pos.Model;
 
+import java.util.Random;
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -12,19 +14,19 @@ public class Ingredient {
     @NotNull (message="enter amount")
     private Integer amount;
 
-    
     private float price;
-
-    private String idName;
     
+    private String idName;
 
     public Ingredient() {
+        
     }
 
     public Ingredient(String name, Integer amount, float price) {
         this.name = name;
         this.amount = amount;
         this.price = price;
+
     }
 
     public String getName() {
@@ -51,10 +53,6 @@ public class Ingredient {
         this.price = price;
     }
 
-    public void setIdName(String idName) {
-        this.idName = idName;
-    }
-
+   
     
-
 }

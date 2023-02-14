@@ -57,6 +57,11 @@ public class IngredientService{
 
 
     }
+
+    // name
+    public Ingredient findByName(String name){
+        return ingredients.get(name);
+    }
    
     
 

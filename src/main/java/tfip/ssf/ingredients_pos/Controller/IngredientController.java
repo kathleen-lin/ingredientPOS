@@ -64,9 +64,14 @@ public class IngredientController {
         return "list";
     }
 
-    // @GetMapping("/{ingredientName}")
-    // public String getIngredientDetails(Model model, @PathVariable(value = "ingredientName") String ingredientName){
+    @GetMapping(path = "/ingredient/{ingredientname}")
+    public String getIngredient (Model model, @PathVariable(value = "ingredientname") String ingredientname){
+        
+        Ingredient ingred = ingdSvc.findByName(ingredientname);
+        //System.out.println(ctc.getId());
+        //ctc.setId(contactId);
+        model.addAttribute("ingredientInfo", ingred);
+        return "ingredientInfo";
 
-    //}
-
+    }
 }

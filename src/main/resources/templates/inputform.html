@@ -9,13 +9,7 @@
 <body>
 
     <div class="row">
-        <form
-        action="#"
-        data-th-action="@{/ingredient}"
-        data-th-object="${ingredient}"
-        method="post"
-        class="col s12"
-      >
+        <form action="#" data-th-action="@{/ingredient}" data-th-object="${ingredient}" method="post"class="col s12">
         <div class="row">
           <div class="input-field col s6">
             <label for="name">Name</label>
@@ -45,6 +39,10 @@
             <label for="price">Price</label>
             <input type="number" data-th-field="*{price}" placeholder="0.00" min ="0.01" step="0.01" class="validate"/>
             
+          </div>
+        </div>
+
+        
           </div>
         </div>
 
